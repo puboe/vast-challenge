@@ -8,7 +8,7 @@
   </preferences>
   <datasources>
     <datasource caption='Employee List (Employee List)' inline='true' name='excel-direct.04bw6ou14bgioa1byg3yn1spj224' version='9.3'>
-      <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/puboe/Google Drive/ITBA/Electivas/Visualización de la información/VAST/Employee List.xlsx' interpretationMode='0' password='' server='' validate='no'>
+      <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/puboe/vast-challenge/VAST/Employee List.xlsx' interpretationMode='0' password='' server='' validate='no'>
         <relation name='Employee List' table='[&apos;Employee List$&apos;]' type='table'>
           <columns gridOrigin='A1:E126:no:A1:E126:0' header='yes' outcome='2'>
             <column datatype='integer' name='F1' ordinal='0' />
@@ -320,7 +320,7 @@
       </semantic-values>
     </datasource>
     <datasource caption='proxMobileOut-MC2' inline='true' name='textscan.07e0i430aayibt1cv93921ymag12' version='9.3'>
-      <connection class='textscan' directory='/Users/puboe/Google Drive/ITBA/Electivas/Visualización de la información/VAST/MCBuildingProxSensorData/csv' filename='proxMobileOut-MC2.csv' password='' server=''>
+      <connection class='textscan' directory='/Users/puboe/vast-challenge/VAST/MCBuildingProxSensorData/csv' filename='proxMobileOut-MC2.csv' password='' server=''>
         <relation name='proxMobileOut-MC2.csv' table='[proxMobileOut-MC2#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
             <column datatype='datetime' name='timestamp' ordinal='0' />
@@ -483,15 +483,15 @@
         </groupfilter>
       </group>
       <mapped-images>
-        <mapped-image caption='Floor1' expression='file:///Users/puboe/Google%20Drive/ITBA/Electivas/Visualización%20de%20la%20información/VAST/VASTChallenge2016FloorPlan-Update20160504/Floor1.jpeg' name='[MappedImage1]'>
+        <mapped-image caption='Floor1' expression='file:///Users/puboe/vast-challenge/VAST/VASTChallenge2016FloorPlan-Update20160504/Floor1.jpeg' name='[MappedImage1]'>
           <mapping bottom='0' left='0' right='189' top='111' x='[x]' y='[y]' />
           <image-options show-entire-image='true' />
         </mapped-image>
-        <mapped-image caption='Floor2' expression='file:///Users/puboe/Google%20Drive/ITBA/Electivas/Visualización%20de%20la%20información/VAST/VASTChallenge2016FloorPlan-Update20160504/Floor2.jpeg' name='[MappedImage2]'>
+        <mapped-image caption='Floor2' expression='file:///Users/puboe/vast-challenge/VAST/VASTChallenge2016FloorPlan-Update20160504/Floor2.jpeg' name='[MappedImage2]'>
           <mapping bottom='0' left='0' right='189' top='111' x='[x]' y='[y]' />
           <image-options show-entire-image='true' />
         </mapped-image>
-        <mapped-image caption='Floor3' expression='file:///Users/puboe/Google%20Drive/ITBA/Electivas/Visualización%20de%20la%20información/VAST/VASTChallenge2016FloorPlan-Update20160504/Floor3.jpeg' name='[MappedImage3]'>
+        <mapped-image caption='Floor3' expression='file:///Users/puboe/vast-challenge/VAST/VASTChallenge2016FloorPlan-Update20160504/Floor3.jpeg' name='[MappedImage3]'>
           <mapping bottom='0' left='0' right='189' top='111' x='[x]' y='[y]' />
           <image-options show-entire-image='true' />
         </mapped-image>
@@ -814,7 +814,7 @@
       </semantic-values>
     </datasource>
     <datasource caption='proxOut-MC2' inline='true' name='textscan.0e3w3ca0cfbi3u17xkl461sloqup' version='9.3'>
-      <connection class='textscan' directory='/Users/puboe/Google Drive/ITBA/Electivas/Visualización de la información/VAST/MCBuildingProxSensorData/csv' filename='proxOut-MC2.csv' password='' server=''>
+      <connection class='textscan' directory='/Users/puboe/vast-challenge/VAST/MCBuildingProxSensorData/csv' filename='proxOut-MC2.csv' password='' server=''>
         <relation name='proxOut-MC2.csv' table='[proxOut-MC2#csv]' type='table'>
           <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
             <column datatype='datetime' name='timestamp' ordinal='0' />
