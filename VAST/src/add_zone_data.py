@@ -1,11 +1,13 @@
 import csv
+import random
 
 def main():
   rows = []
-  with open('/Users/Hobbit/git/vast-challenge/VAST/MCBuildingProxSensorData/csv/all-sensors.csv') as csvfile:
+  with open('/Users/Hobbit/git/vast-challenge/VAST/MCBuildingProxSensorData/csv/proxOut-MC2.csv') as csvfile:
     data_reader = csv.reader(csvfile)
+    i = 0
     for row in data_reader:
-      if row[5] == 'null':
+      if i != 0 or (len(row) > 5 and row[5] == 'null'):
         floor = int(row[3])
         zone = row[4]
 
@@ -13,20 +15,24 @@ def main():
         y = 0
         if floor == 1:
           (x, y) = map_floor_one(row, zone)
-          row[5] = x
-          row[6] = y
         elif floor == 2:
           (x, y) = map_floor_two(row, zone)
-          row[5] = x
-          row[6] = y
         elif floor == 3:
           (x, y) = map_floor_three(row, zone)
+
+        if len(row) > 5:
           row[5] = x
           row[6] = y
-
+        else:
+          row.append(x)
+          row.append(y)
+      elif i == 0:
+        row.append('x')
+        row.append('y')
+      i += 1
       rows.append(row)
 
-    with open('/Users/Hobbit/git/vast-challenge/VAST/MCBuildingProxSensorData/csv/all-sensors-location.csv', 'w') as csvfile:
+    with open('/Users/Hobbit/git/vast-challenge/VAST/MCBuildingProxSensorData/csv/proxOut-MC2-location.csv', 'w') as csvfile:
       writer = csv.writer(csvfile, delimiter=',')
       for row in rows:
         writer.writerow(row)
